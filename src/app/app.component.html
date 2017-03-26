@@ -1,0 +1,12 @@
+<h1>
+  {{title}}
+</h1>
+<table class="">
+	<tr  *ngFor="let result of results">
+		<td>{{result.product_name}}</td>
+		<td>{{result.product_code}}</td>
+		<td>
+			<button (click)="delete()">ลบ</button>
+		</td>
+	</tr>
+</table>
